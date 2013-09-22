@@ -1,0 +1,24 @@
+en:
+  vagrant_docker:
+    config:
+      image_fallback: |-
+        No image specified via "image" - using "base" as fallback
+      invalid_transport: |-
+        The valid dockerd_type values are: [unix|tcp].
+      invalid_host_name: |-
+        Dockerd host does not resolve
+      invalid_host_ip: |-
+        Dockerd host is not a valid ip address.
+      invalid_port: |-
+        Dockerd port is not in the valid range [0-65535].
+      dockerd_not_running:
+        socket_path_missing: |-
+          Socket path specified is missing. Is dockerd running?
+        api_client_connection_error: |-
+          No Response from dockerd service. Is the dockerd daemon running?
+    states:
+      short_running: |-
+        running
+      long_running: |-
+        The docker instance is running. To stop this machine, you can
+        `vagrant halt`. To destroy the machine, `vagrant destroy`
